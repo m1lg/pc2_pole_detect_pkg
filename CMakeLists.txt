@@ -154,6 +154,11 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 
+add_executable(beef src/pc2_main.cpp)
+add_dependencies(beef ${beef_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(beef ${catkin_LIBRARIES})
+
+
 #############
 ## Install ##
 #############
