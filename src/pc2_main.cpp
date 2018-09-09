@@ -31,7 +31,7 @@ main (int argc, char** argv)
   ros::NodeHandle nh;
 
   // Create a ROS subscriber for the input point cloud
-  ros::Subscriber sub = nh.subscribe ("input", 1, cloud_cb);
+  ros::Subscriber sub = nh.subscribe ("velodyne/front/filtered", 1, cloud_cb);
 
   // Create a ROS publisher for the output point cloud
   pub = nh.advertise<pcl::PCLPointCloud2> ("output", 1);

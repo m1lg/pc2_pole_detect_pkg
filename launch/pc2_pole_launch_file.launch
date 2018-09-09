@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="pc2_pole_detect_pkg" type="beef" name="pc2_process_name"  output="screen">
+    </node>
+</launch>
